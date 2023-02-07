@@ -4,17 +4,17 @@ import Container from "./Container.astro";
 ---
 
 <header>
-    <nav class="z-10 w-full absolute">
+    <nav class="z-10 w-full fixed">
         <Container>
             <div class="flex flex-wrap items-center justify-between py-2 gap-6 md:py-4 md:gap-0 relative">
                 <input aria-hidden="true" type="checkbox" name="toggle_nav" id="toggle_nav" class="hidden peer">
                 <div class="relative z-20 w-full flex justify-between lg:w-max md:px-0">
-                    <a href="#home" aria-label="logo" class="flex space-x-2 items-center">
-                        <div aria-hidden="true" class="flex space-x-1">
+                    <a href="/#home" aria-label="logo" class="flex space-x-2 items-center">
+                        <!-- <div aria-hidden="true" class="flex space-x-1">
                             <div class="h-4 w-4 rounded-full bg-gray-900 dark:bg-white"></div>
                             <div class="h-6 w-2 bg-primary"></div>
-                        </div>
-                        <span class="text-2xl font-bold text-gray-900 dark:text-white">Astrolus</span>
+                        </div> -->
+                        <span class="text-2xl font-bold text-gray-900 dark:text-white">Purplr.</span>
                     </a>
                     
                     <div class="relative flex items-center lg:hidden max-h-10">
@@ -32,36 +32,46 @@ import Container from "./Container.astro";
                    
                     <div class="text-gray-600 dark:text-gray-300 lg:pr-4 lg:w-auto w-full lg:pt-0">
                         <ul class="tracking-wide font-medium lg:text-sm flex-col flex lg:flex-row gap-6 lg:gap-0">
-                            <li>
-                                <a href="#features" class="block md:px-4 transition hover:text-primary">
+                            <!-- <li>
+                                <a href="/#features" class="block md:px-4 transition hover:text-primary">
                                     <span>Features</span>
                                 </a>
-                            </li>
+                            </li> -->
                             <li>
-                                <a href="#solution" class="block md:px-4 transition hover:text-primary">
+                                <a href="/#solution" class="block md:px-4 transition hover:text-primary">
                                     <span>Solution</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#testimonials" class="block md:px-4 transition hover:text-primary">
-                                    <span>Testimonials</span>
+                                <a href="/#caseStudies" class="block md:px-4 transition hover:text-primary">
+                                    <span>Case Studies</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#blog" class="block md:px-4 transition hover:text-primary">
-                                    <span>Blog</span>
+                                <a href="/contact" class="block md:px-4 transition hover:text-primary">
+                                    <span>Contact</span>
                                 </a>
                             </li>
+                            <!-- <li>
+                                <a href="/#testimonials" class="block md:px-4 transition hover:text-primary">
+                                    <span>Testimonials</span>
+                                </a>
+                            </li> -->
+                            <!-- <li>
+                                <a href="/#blog" class="block md:px-4 transition hover:text-primary">
+                                    <span>Blog</span>
+                                </a>
+                            </li> -->
                         </ul>
                     </div>
 
                     <div class="mt-12 lg:mt-0">
                         <a
-                            href="#"
+                            href="/contact"
                             class="relative flex h-9 w-full items-center justify-center px-4 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
                             >
                             <span class="relative text-sm font-semibold text-white"
-                                >Get Started</span
+                                >Schedule a call</span
                             >
                         </a>
                     </div>
