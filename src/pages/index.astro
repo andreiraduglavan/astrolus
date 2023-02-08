@@ -8,12 +8,13 @@ import Blog from '../components/Blog.astro';
 import CaseStudies from '../components/CaseStudies.astro';
 import Features from '../components/Features.astro';
 
-fetch(
-  'https://purplr-server.onrender.com/start',
-  { method: 'POST'}
-).then().catch(console.error)
-
 ---
+<script>
+  fetch(
+    'https://purplr-server.onrender.com/',
+    { method: 'GET'}
+  ).then().catch(console.error)
+</script>
 
 <Layout title="Welcome to Astrolus.">
 	<main class="space-y-32 mb-40">

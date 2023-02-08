@@ -2,12 +2,15 @@
 import Container from "../../components/Container.astro";
 import Layout from "../../layouts/Layout.astro";
 
-fetch(
-  'https://purplr-server.onrender.com/start',
-  { method: 'POST'}
-).then().catch(console.error)
+
 
 ---
+<script>
+  fetch(
+    'https://purplr-server.onrender.com/',
+    { method: 'GET'}
+  ).then().catch(console.error)
+</script>
 
 <Layout>
   <main class="md:pt-20">
