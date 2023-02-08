@@ -2,24 +2,11 @@
 import Container from "../../components/Container.astro";
 import Layout from "../../layouts/Layout.astro";
 
-const name = Astro.url.searchParams.get('name') || ''
-const email = Astro.url.searchParams.get('email') || ''
-const time = Astro.url.searchParams.get('time') || ''
-const description = Astro.url.searchParams.get('description') || ''
+fetch(
+  'https://purplr-server.onrender.com',
+  { method: 'GET'}
+).then().catch(console.error)
 
-const data = {name, email, time, description }
-
-if(Astro.url.searchParams.has('email')) {
-  fetch(
-    'http://localhost:5000/send',
-    { method: 'POST',
-      headers:{
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(data) 
-    }
-  )
-}
 ---
 
 <Layout>
