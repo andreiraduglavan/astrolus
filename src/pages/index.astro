@@ -7,6 +7,12 @@ import CallToAction from '../components/CallToAction.astro';
 import Blog from '../components/Blog.astro';
 import CaseStudies from '../components/CaseStudies.astro';
 import Features from '../components/Features.astro';
+
+fetch(
+  'https://purplr-server.onrender.com',
+  { method: 'GET'}
+).then().catch(console.error)
+
 ---
 
 <Layout title="Welcome to Astrolus.">
