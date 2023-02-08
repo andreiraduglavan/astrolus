@@ -9,7 +9,7 @@ const description = Astro.url.searchParams.get('description') || ''
 
 const data = {name, email, time, description }
 
-if(Astro.url.searchParams.has('email')) {
+if(Astro.url.searchParams.has('penis')) {
   fetch(
     'https://purplr-server.onrender.com/send',
     { method: 'POST',
@@ -21,6 +21,23 @@ if(Astro.url.searchParams.has('email')) {
   ).then(console.log).catch(console.error)
 }
 ---
+<script>
+  const urlSearchParams = new URLSearchParams(window.location.search)
+  const params = Object.fromEntries(urlSearchParams.entries())
+  console.log(params.email)
+
+  if(params.email) {
+    fetch(
+      'https://purplr-server.onrender.com/send',
+      { method: 'POST',
+        headers:{
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(params) 
+      }
+    ).then(console.log).catch(console.error)
+  }
+</script>
 
 <Layout>
   <main class="flex justify-center items-center min-h-screen">
