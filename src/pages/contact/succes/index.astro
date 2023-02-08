@@ -18,7 +18,7 @@ if(Astro.url.searchParams.has('email')) {
       },
       body: JSON.stringify(data) 
     }
-  ).then().catch(console.error)
+  ).then(console.log).catch(console.error)
 }
 ---
 
