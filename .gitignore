@@ -3,7 +3,7 @@ dist/
 .output/
 
 server/
-src/pages/contact/succes/
+
 
 # dependencies
 node_modules/
