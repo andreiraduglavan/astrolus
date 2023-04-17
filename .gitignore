@@ -3,6 +3,7 @@ dist/
 .output/
 
 server/
+server copy/
 
 
 # dependencies
