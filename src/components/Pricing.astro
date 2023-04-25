@@ -1,0 +1,85 @@
+---
+import Container from "./Container.astro"
+
+---
+
+<div class="relative py-16 pt-8" id="pricing">
+  <div aria-hidden="true" class="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
+    <div class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
+    <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
+  </div>
+  <Container>
+    <h1 class="text-center text-4xl font-bold text-gray-800 dark:text-white md:text-5xl">Want to lose less customers?</h1>
+    <p class="text-center text-xl text-gray-600 dark:text-gray-300 mt-4">
+      Get an app today and start retaining your customers.
+    </p>
+    <div class="mt-12">
+      <div class="relative rounded-3xl border border-gray-100 bg-white shadow-2xl shadow-gray-600/20 transition duration-500 dark:border-white/10 dark:bg-gray-900 dark:shadow-none">
+          <div class="flex flex-col justify-center gap-12 divide-y p-12 dark:divide-gray-800 md:flex-row md:items-center md:divide-y-0 md:divide-x">
+              <div class="text-center md:w-5/12">
+                  <h3 class="text-3xl font-bold text-gray-900 dark:text-white">Fully Functional Mobile App</h3>
+                  <p class="text-lg text-gray-600 dark:text-gray-300">For your Shopify Store</p>
+                  <span class="mb-6 mt-12 inline-block text-6xl font-bold text-gray-900 dark:text-white"><span class="text-4xl text-primary dark:text-gray-200">$</span>1200</span>
+    
+                  <div class="flex justify-center">
+                    <a
+                    href="/contact"
+                    class="relative flex h-10 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+                  >
+                    <span class="relative text-small font-semibold text-white dark:text-dark"
+                      >Get an app</span>
+                  </a>
+    
+    
+                  </div>
+    
+                  <!-- <p class="mt-12 text-sm text-gray-500 dark:text-gray-400">Includes : Security, Unlimited Storage, Payment, Search engine, and all features</p> -->
+              </div>
+              <div class="relative md:w-7/12 md:pl-12">
+                  <ul role="list" class="space-y-4 py-6 text-gray-600 dark:text-gray-300">
+                      <li class="space-x-2">
+                          <span class="font-semibold text-primary dark:text-gray-300">✓</span>
+                          <span>Real-time Sync with Shopify</span>
+                      </li>
+                      <li class="space-x-2">
+                        <span class="font-semibold text-primary dark:text-gray-300">✓</span>
+                        <span>Custom Design to Fit Your Brand</span>
+                    </li>
+                      <li class="space-x-2">
+                          <span class="font-semibold text-primary dark:text-gray-300">✓</span>
+                          <span>Unlimited Push Notifications Campaigns</span>
+                      </li>
+                      <li class="space-x-2">
+                          <span class="font-semibold text-primary dark:text-gray-300">✓</span>
+                          <span>Cart Abandonment Notifications</span>
+                      </li>
+                      <li class="space-x-2">
+                        <span class="font-semibold text-primary dark:text-gray-300">✓</span>
+                        <span>International Selling - Multi Language & Multi Currency (Add-on)</span>
+                      </li>
+                      <li class="space-x-2">
+                        <span class="font-semibold text-primary dark:text-gray-300">✓</span>
+                        <span>Dedicated Success Manager</span>
+                      </li>
+                      <li class="space-x-2">
+                        <span class="font-semibold text-primary dark:text-gray-300">✓</span>
+                        <span>Source Code</span>
+                      </li>
+                      <li class="space-x-2">
+                        <span class="font-semibold text-primary dark:text-gray-300">✓</span>
+                        <span>12 Months Phone and Email Support ($200/year after)</span>
+                      </li>
+                  </ul>
+                  <p class="text-gray-700 dark:text-white">Any custom feature you need can be added as an add-on.</p>
+                  <!-- <div class="mt-12 flex flex-wrap items-center justify-between gap-6 grayscale">
+                      <img class="h-8 w-auto lg:h-12" src="images/clients/airbnb.svg" width="100" alt="airbnb">
+                      <img class="h-6 w-auto lg:h-8" src="images/clients/netflix.svg" width="100" alt="bissell">
+                      <img class="h-8 w-auto lg:h-10" src="images/clients/ge.svg" width="100" height="100" alt="ge">
+                      <img class="ww-auto h-8 lg:h-12" src="images/clients/microsoft.svg" width="100" alt="microsoft">
+                  </div> -->
+              </div>
+          </div>
+      </div>
+    </div>
+  </Container>
+</div>
