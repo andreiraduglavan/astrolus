@@ -10,6 +10,7 @@ import Features from '../components/Features.astro'
 import TryDemo from '../components/TryDemo.astro';
 import Pricing from '../components/Pricing.astro';
 import FaQ from '../components/FaQ.astro';
+import Video from '../components/Video.astro';
 
 ---
 <script>
@@ -20,8 +21,9 @@ import FaQ from '../components/FaQ.astro';
 </script>
 
 <Layout title="Welcome to Astrolus.">
-	<main class="space-y-32 mb-40">
+	<main class="space-y-16 md:space-y-32 mb-40">
 		<HeroSection/>
+		<Video />
 		<Stats/>
 		<Features />
 		<TryDemo />
